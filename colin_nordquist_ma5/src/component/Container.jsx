@@ -11,7 +11,7 @@ export default function Container(props) {
 
 
     return (
-        <div className='Container'>
+        <div className='container'>
             <h1>Count: {blackCount}</h1>
             <Box position="1" blackCount={(isBlack) => setBlackCount(blackCount + isBlack)} />
             <Box position="2" blackCount={(isBlack) => setBlackCount(blackCount + isBlack)} />
