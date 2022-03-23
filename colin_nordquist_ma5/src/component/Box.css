@@ -1,0 +1,33 @@
+.box {
+
+    width: 100px;
+    height: 100px;
+    margin: 1px;
+    
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.black {
+    background-color: black;
+}
+
+.white {
+    background-color: white;
+}
+
+.green {
+    background-color: green;
+}
+
+.aqua {
+    background-color: aqua;
+}
+
+.yellow {
+    background-color: yellow;
+}
