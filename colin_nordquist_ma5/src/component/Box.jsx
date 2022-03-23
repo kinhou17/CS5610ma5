@@ -1,21 +1,22 @@
 import React, { useState } from 'react';
-
 import './Box.css';
-
-/*
-props:
-    {
-        text: 'banana'
-
-    }
-*/
 
 
 export default function Box(props) {
 
-
     const [color, setColor] = useState('white')
 
+    
+    let idName = "box";
+    if (props.position == "1") {
+        idName += '1';
+    } else if (props.position == "2") {
+        idName += '2';
+    } else if (props.position == "3") {
+        idName += "3";
+    } else if (props.position == "4") {
+        idName += "4";
+    }
 
     let className = "box";
     if (color === 'white') {
@@ -23,7 +24,6 @@ export default function Box(props) {
     } else if (color === 'black') {
         className += " " + "black";
     }
-
 
     function changeColor() {
 
@@ -35,8 +35,9 @@ export default function Box(props) {
             props.blackCount(-1);
         }
     }
+    console.log(className);
 
-    return (<div className={className} onClick={() => changeColor()}></div>);
+    return (<div className={className} id={idName} onClick={() => changeColor()}></div>);
 
 
 

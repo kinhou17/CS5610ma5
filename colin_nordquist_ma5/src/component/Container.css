@@ -1,5 +1,13 @@
 .Container {
-    align-self: center;
-    align-items: center;
-    background-color: tomato;
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "box1 box2"
+    "box3 box4";
+    margin: auto;
+}
+
+h1 {
+    grid-area: header;
+    text-align: center;
 }

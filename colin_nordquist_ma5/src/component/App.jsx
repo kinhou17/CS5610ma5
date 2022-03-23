@@ -5,16 +5,11 @@ import Container from './Container'
 
 function App() {
 
-    const [blackCount, setBlackCount] = useState(0);
-
     return (
         <div>
-            <Container></Container>
-                <h1>Count: {blackCount}</h1>
-                <Box blackCount={(isBlack) => setBlackCount(blackCount + isBlack)} />
-                <Box blackCount={(isBlack) => setBlackCount(blackCount + isBlack)} />
-                <Box blackCount={(isBlack) => setBlackCount(blackCount + isBlack)} />
-                <Box blackCount={(isBlack) => setBlackCount(blackCount + isBlack)} />
+            <Container>
+                
+            </Container>
         </div>
     );
 }

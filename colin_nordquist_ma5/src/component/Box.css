@@ -1,15 +1,26 @@
 .box {
-
     width: 100px;
     height: 100px;
-    margin: 1px;
-    
     border: 1px solid grey;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
+    align-items: center;    
+}
+
+#box1 {
+    grid-area: box1;
+    margin-left: auto;
+}
+
+#box2 {
+    grid-area: box2;
+}
+
+#box3 {
+    grid-area: box3;
+    margin-left: auto;
+}
+
+#box4 {
+    grid-area: box4;
 }
 
 .black {
@@ -18,16 +29,4 @@
 
 .white {
     background-color: white;
-}
-
-.green {
-    background-color: green;
-}
-
-.aqua {
-    background-color: aqua;
-}
-
-.yellow {
-    background-color: yellow;
 }

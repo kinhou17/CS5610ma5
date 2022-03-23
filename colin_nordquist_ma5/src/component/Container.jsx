@@ -11,14 +11,13 @@ export default function Container(props) {
 
 
     return (
-        <div>
+        <div className='Container'>
             <h1>Count: {blackCount}</h1>
-            <Box blackCount={(isBlack) => setBlackCount(blackCount + isBlack)} />
-            <Box blackCount={(isBlack) => setBlackCount(blackCount + isBlack)} />
-            <Box blackCount={(isBlack) => setBlackCount(blackCount + isBlack)} />
-            <Box blackCount={(isBlack) => setBlackCount(blackCount + isBlack)} />
+            <Box position="1" blackCount={(isBlack) => setBlackCount(blackCount + isBlack)} />
+            <Box position="2" blackCount={(isBlack) => setBlackCount(blackCount + isBlack)} />
+            <Box position="3" blackCount={(isBlack) => setBlackCount(blackCount + isBlack)} />
+            <Box position="4" blackCount={(isBlack) => setBlackCount(blackCount + isBlack)} />
         </div>
     );
 
-    // return (<div className='Container'>yuuu</div>);
 }
