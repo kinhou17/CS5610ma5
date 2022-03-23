@@ -1,9 +1,9 @@
 .Container {
     display: grid;
-    grid-template-areas: 
-    "header header"
-    "box1 box2"
-    "box3 box4";
+    grid-template-areas:
+        "header header"
+        "box1 box2"
+        "box3 box4";
     margin: auto;
 }
 
